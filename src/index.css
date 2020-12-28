@@ -51,6 +51,8 @@
      font-family: "raleway",sans-serif;
      background-color:  #fff; 
      text-transform: capitalize;
+     font-size: 18px;
+     font-weight: bolder;
   }
   .cards{
      width: 100%;
@@ -74,7 +76,7 @@
   background-color: #fff;
   }
   
-  button{
+ /* button{
      padding: 5px 8px;
      font-family: "raleway",sans-serif;
      text-transform: uppercase;
@@ -87,7 +89,7 @@
      cursor: pointer;
      border: 1px solid black;
 
-  }
+  }*/
   @media(max-width: 768px){
    .card{
       float: none;
