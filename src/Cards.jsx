@@ -1,5 +1,6 @@
 import React from "react";
-
+import 'bootstrap/dist/css/bootstrap.css';
+import { Button } from 'reactstrap';
 function Card(props){
     return(
     <>
@@ -15,7 +16,7 @@ function Card(props){
                   {props.sname}
                   </h3>
                     <a href={props.link}  target='blank'>
-                        <button >Watch now</button>                                            
+                    <Button color="primary" size="lg" block>watch now</Button>{' '}                                      
                     </a>
                 </div>
             </div>
