@@ -36,5 +36,11 @@ const Sdata=[{
                ,title:"A NETFLIX orignal series"
                ,link:"https://www.netflix.com/in/title/80192098"
               }
+              ,{
+               imgsrc:"https://wallpapercave.com/wp/wp6291597.jpg"
+               ,sname:"MONEY heist"
+               ,title:"A NETFLIX orignal series"
+               ,link:"https://www.netflix.com/in/title/80192098"
+              }
               ];
              export default Sdata;
