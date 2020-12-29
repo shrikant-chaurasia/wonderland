@@ -1,31 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
 //import App from './App';
-import Card from "./Cards";
-import Sdata from "./Sdata";
-import AppFooter from "./footer/Footer";
-  function ncard(val){
+import Home from "./Home/Home";
+import Signup from "./Auth/Signup";
+import Login from "./Auth/Login";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-  
 
-   return(
-      <Card  imgsrc={val.imgsrc}
-        sname={val.sname}
-       title={val.title}
-      
-       link={val.link}
-/>
-   );
-  }
        
 ReactDOM.render(
-<>
-<h1 className="hedding_style">list of top 6 NETFLIX serise in 2020</h1>
 
-{Sdata.map(ncard)}
-<AppFooter/>
-</>
+
+<BrowserRouter>
+<Switch>
+
+  <Route exact path ="/" component = {Home} />
+  <Route path ="/signup" component = {Signup} />
+  <Route path ="/login" component = {Login} />
+  <Route  component = {Home} />
+</Switch>
+   
+
+
+</BrowserRouter>
 ,
 document.getElementById("root")
 );
